@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.1.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.lizhi.common</groupId>
 	<artifactId>commonutil</artifactId>
@@ -21,21 +21,15 @@
 		<redis.client.version>2.9.0</redis.client.version>
         <zookeeper.client.version>3.4.9</zookeeper.client.version>
         <curator.version>2.12.0</curator.version>
+		<redisson.version>3.3.2</redisson.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-validation</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>${mybatis.version}</version>
+
 		</dependency>
 
 		<dependency>
@@ -91,6 +85,12 @@
             <version>${curator.version}</version>
         </dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson</artifactId>
+			<version>${redisson.version}</version>
+		</dependency>
     </dependencies>
 
 	<build>
